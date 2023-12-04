@@ -3,6 +3,7 @@ import { Routes, Route, Link} from 'react-router-dom'
 import Home from './Pages/home'
 import Books from './Pages/Book'
 import Contact from './Pages/contact'
+import BooksList from './Pages/BooksList'
 function App() {
  
 
@@ -23,7 +24,8 @@ function App() {
     </nav>
     <Routes>
       <Route path="/" element={<Home />}/>
-      <Route path="/books" element={<Books />}/>
+      <Route path="/books" element={<BooksList />}/>
+      <Route path="/books/:id" element={<Books />}/>
       <Route path="/contact" element={<Contact />}/>
     </Routes>
     </>
